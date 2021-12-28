@@ -2,7 +2,7 @@
 
 <ul>
     <% @messages.each do |message| %>
-      <li><%= message.content %> : <%= message.content %></li>
+      <li><%= message.content %> : <%= message.title %> &gt; <%= message.content %></li>
     <% end %>
 </ul>
 
