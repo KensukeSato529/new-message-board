@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #94c674;
+    font-size: 1rem;
+}
+a {
+    text-decoration: none;
+}
+images {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
