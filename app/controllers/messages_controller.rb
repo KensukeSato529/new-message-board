@@ -19,7 +19,7 @@ class MessagesController < ApplicationController
             flash[:success] = 'メッセージは正常に投稿されました'
             redirect_to @message
         else
-            flash.now[:danger] = 'メッセージは投稿されませんでした'
+            flash.now[:danger] = 'メッセージが投稿されませんでした'
             render :new
         end
     end
@@ -44,7 +44,7 @@ class MessagesController < ApplicationController
         @message.destroy
         
         flash[:success] = 'メッセージは正常に削除されました'
-        redirect_to message_url
+        redirect_to messages_url
     end
     
     private
@@ -54,6 +54,6 @@ class MessagesController < ApplicationController
     end
     
     def message_params
-        params.require(:messages).permit(:content, :title)
+        params.require(:message).permit(:content, :title)
     end
 end
